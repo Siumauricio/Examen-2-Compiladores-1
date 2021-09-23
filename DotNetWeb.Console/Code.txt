@@ -1,0 +1,30 @@
+﻿{% init
+    int a;
+    float b;
+    string x;
+    StringList arr;
+
+    a = 5+5;
+    b = 5.68;
+    x = 'test';
+    arr = ['one', 'two', 'sd'];
+%}
+
+<div>
+    {{a}}
+</div>
+<div>
+    {{b}}
+</div>
+<div>
+    {{x}}
+</div>
+
+<div>
+{%if a > 6 %} <b>{{ a }}</b>{% endif %}
+</div>
+<ul>
+{-%foreach element in arr %}
+    <li> {{element}} </li>
+{ %endforeach %}
+</ul>
